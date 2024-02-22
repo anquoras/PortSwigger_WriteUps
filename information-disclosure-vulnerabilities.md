@@ -13,23 +13,23 @@ This lab leaks its source code via backup files in a hidden directory. To solve 
 
 Mục tiêu của bài lab lần này là tìm database password đã bị mã hóa thông qua thư mục backup bị ẩn đi. Đầu tiên, ta truy cập trang web như thông thường đồng thời bật proxy của burpsuite.
 
-![](<.gitbook/assets/0 (1) (1).png>)
+![](<.gitbook/assets/0 (1) (1) (1).png>)
 
 Truy cập trên trang web, website thông báo rằng việc truy cập thư mục backup bị chặn.
 
-![](<.gitbook/assets/1 (1) (1).png>)
+![](<.gitbook/assets/1 (1) (1) (1).png>)
 
 ở burpsuite, trong target. Ta mở request tới thư mục backup và gửi nó tới repeater.
 
-![](<.gitbook/assets/2 (1) (1).png>)
+![](<.gitbook/assets/2 (1) (1) (1).png>)
 
 Sau khi nhận response, ta thấy rằng trang web có chỉ định đến liên kết đến /ProductTemplate.java.bak
 
-![](<.gitbook/assets/3 (1) (1).png>)
+![](<.gitbook/assets/3 (1) (1) (1).png>)
 
 Ta chèn thêm vào vần header ở request, và nhận kết quả là 1 đoạn code java. Kéo xuống dưới ta thấy 1 đoạn mã khả nghi
 
-![](<.gitbook/assets/4 (1) (1).png>)
+![](<.gitbook/assets/4 (1) (1) (1).png>)
 
 Ta nộp lên phần submission của bài lab và bùm! Ta đã solve được bài lab này.
 

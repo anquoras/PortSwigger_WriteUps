@@ -1,7 +1,5 @@
 # Exploring the OWASP Top 10
 
-**Lab 1: Exploring the OWASP Top 10**
-
 Objective:
 
 * The objective of this lab is to explore the dynamics of the OWASP (Open Web Application Security Project) Top 10 list. We aim to understand how it has evolved over the years, why certain vulnerabilities move up in rank, and its real-world implications. Additionally, we will examine regional and industry-specific variations in the prevalence of these vulnerabilities and identify effective strategies for addressing them.

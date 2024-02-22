@@ -20,19 +20,19 @@ To solve the lab, brute-force Carlos's cookie to gain access to his "My account"
 * Victim's username: `carlos`
 * [Candidate passwords](https://portswigger.net/web-security/authentication/auth-lab-passwords)
 
-![](.gitbook/assets/0.png)
+![](<.gitbook/assets/0 (1).png>)
 
 Đầu tiên, ta sẽ đăng nhập vs username và password mà đề bài đưa ra. Và tích vào phần stay-login
 
-![](.gitbook/assets/1.png)
+![](<.gitbook/assets/1 (1).png>)
 
 Vào burpsuite, tại phần get /account ta thấy một mã tại phần stay-login. Quan sát sang phần inspector ta có: wiener:51dc30ddc473d43a6011e9ebba6ca770. Ta có thể thấy session được tạo bởi username : md5encodingpassword
 
-![](.gitbook/assets/2.png)
+![](<.gitbook/assets/2 (1).png>)
 
 Crack mã md5 tại crackstation ta ra đc mật khẩu mà ta đã nhập vào trước. sau đó ta sẽ gửi request này vào intruder
 
-![](.gitbook/assets/3.png)
+![](<.gitbook/assets/3 (1).png>)
 
 Tại đây, ta sẽ paste list password mà đề bài cho. Tại phần processing payload, ta sẽ thêm
 
@@ -42,7 +42,7 @@ Add Prefix: carlos: -> add carlos: vào đầu mỗi mã
 
 Base64-encode -> encode mã thành base64
 
-![](.gitbook/assets/4.png)
+![](<.gitbook/assets/4 (1).png>)
 
 ![](.gitbook/assets/5.png)
 

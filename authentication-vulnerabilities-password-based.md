@@ -19,23 +19,23 @@ This lab is vulnerable to username enumeration and password brute-force attacks.
 
 To solve the lab, enumerate a valid username, brute-force this user's password, then access their account page.
 
-![](<.gitbook/assets/0 (1).png>)
+![](<.gitbook/assets/0 (1) (1).png>)
 
 Đọc qua overview của bài lab, ta thấy bài lab tập trung vào việc đánh cắp các username và password của người dùng hợp lệ trong trang web thông qua việc bruteforce. Từ đó, tiến hành khai thác thông tin và các thông tin nhạy cảm.
 
-![](<.gitbook/assets/1 (1).png>)
+![](<.gitbook/assets/1 (1) (1).png>)
 
 Ta sẽ thử vs 1 username và password bất kì. Và quan sát các gói tin trên burpsuite
 
-![](<.gitbook/assets/2 (1).png>)
+![](<.gitbook/assets/2 (1) (1).png>)
 
 Từ đây, ta sẽ gửi gói tin về intruder, nơi chúng ta sẽ tiến hành dò username và password. Nói qua về intruder
 
 Intruder ở burpsuite là một công cụ tự động hóa các cuộc tấn công tùy chỉnh chống lại các ứng dụng web1. Nó cho phép bạn định cấu hình các cuộc tấn công gửi đi gửi lại cùng một yêu cầu HTTP, chèn các tải trọng khác nhau vào các vị trí được xác định trước mỗi lần.
 
-![](<.gitbook/assets/3 (1).png>) Ta sẽ chèn tham số vào phần username trước để tiến hành dò ra username phù hợp thông qua đăng nhập nếu username đúng mà password sai web sẽ trả về ‘’incorrect password”
+![](<.gitbook/assets/3 (1) (1).png>) Ta sẽ chèn tham số vào phần username trước để tiến hành dò ra username phù hợp thông qua đăng nhập nếu username đúng mà password sai web sẽ trả về ‘’incorrect password”
 
-![](<.gitbook/assets/4 (1).png>)
+![](<.gitbook/assets/4 (1) (1).png>)
 
 Bài lab đã cho ta 1 list các username để bruteforce
 
