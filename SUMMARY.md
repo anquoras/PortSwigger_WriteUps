@@ -1,3 +1,4 @@
 # Table of contents
 
-* [Lab 1: Exploring the OWASP Top 10](README.md)
+* [Exploring the OWASP Top 10](README.md)
+* [Information Disclosure Vulnerabilities](information-disclosure-vulnerabilities.md)

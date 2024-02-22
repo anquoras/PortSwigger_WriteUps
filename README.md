@@ -1,4 +1,4 @@
-# Lab 1: Exploring the OWASP Top 10
+# Exploring the OWASP Top 10
 
 **Lab 1: Exploring the OWASP Top 10**
 
@@ -25,6 +25,3 @@ In this lab, we conducted extensive research based on the following five key que
 * Các chiến lược: thiết kế an toàn , quản lý mã nguồn, bảo vệ theo từng lớp, bảo mật dữ liệu, kiểm tra và giám sát liên tục, giáo dục và nhận thức bảo mật.
 * Tổ chức cần áp dụng một chiến lược bảo mật toàn diện và liên tục để chủ động giải quyết và giảm thiểu các lỗ hổng trong Top 10 OWASP. Điều này đòi hỏi sự cam kết từ tất cả các bên liên quan, sự quản lý hiệu quả và việc thực hiện các biện pháp bảo mật từ giai đoạn phát triển đến vận hành ứng dụng.
 
-Write a report to answer all the questions above (only allow **PDF** or **Markdown**)
-
-The report file name must be **Class\_YourStudentID \_YourName\_Lab1**
