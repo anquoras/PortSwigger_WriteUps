@@ -8,3 +8,4 @@
 * [Authentication Vulnerabilities (other authentication mechanisms)](authentication-vulnerabilities-other-authentication-mechanisms.md)
 * [Access control vulnerabilities - Privilege escalation](access-control-vulnerabilities-privilege-escalation.md)
 * [Access control vulnerabilities - OAuth2.0](access-control-vulnerabilities-oauth2.0.md)
+* [SQL injection](sql-injection.md)
